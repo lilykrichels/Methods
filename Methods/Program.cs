@@ -41,7 +41,15 @@ namespace Methods
             double monthlyWadge = hours * wage;
             Console.WriteLine("Monthy Earnings = " + monthlyWadge);
             return monthlyWadge; 
+
         }
+            public static int DogYears(int age)
+        {
+           int newAge = age * 7;
+            Console.WriteLine("Your age in dog years is " + newAge);
+            return newAge; 
+        }
+
 
         static void Main(string[] args)
         {
@@ -56,6 +64,7 @@ namespace Methods
 
             WageCalc(162.4, 17.85);
 
+            DogYears(10);
         }
     }
 }
